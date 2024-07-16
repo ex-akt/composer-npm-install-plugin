@@ -1,0 +1,27 @@
+{
+    "name": "ex-akt/composer-npm-install-plugin",
+    "description": "Shared Webpack Config for our customer Contao projects",
+    "license": "LGPL-3.0-or-later",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "Samuel Heer",
+            "homepage": "https://github.com/samuelheer"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^2.0",
+        "ex-akt/contao-webpack-config-bundle": "^2.0"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Exakt\\ComposerNpmInstallPlugin\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "Exakt\\ComposerNpmInstallPlugin\\PostUpdateComposerPlugin"
+    }
+}
